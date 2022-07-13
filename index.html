@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.3.1/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/;
+    meshoptDecoderPath: https://unpkg.com/meshoptimizer@0.16.0/meshopt_decoder.js;">
+      <a-assets> 
+        <a-asset-item id="building" src="https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/library-large/model.gltf"> </a-asset-item>
+      </a-assets>
+      <a-entity environment="preset: tron;"></a-entity>
+       <a-entity gltf-model="#building" position="2 0 -15" scale="9 9 9"></a-entity>
+    </a-scene>
+  </body>
+</html>
